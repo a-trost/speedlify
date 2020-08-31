@@ -5,7 +5,7 @@ module.exports = {
 	// skip if this is a new fork of the speedlify (not Zach’s)
 	skip: false,
 	options: {
-		frequency: 60 * 23, // 23 hours
+		frequency: 60 * 24 * 3, // 3 days
 		// Use "run" if the sites don’t share assets on the same origin
 		//           and we can reset chrome with each run instead of
 		//           each site in every run (it’s faster)
@@ -14,12 +14,5 @@ module.exports = {
 	},
 	urls: [
 		"https://frontend.horse/",
-		"https://frontend.horse/articles/",
-		"https://frontend.horse/issues/",
-		// Popular Posts
-		"https://frontend.horse/articles/make-gifs-into-letters-with-clip-paths/",
-		"https://frontend.horse/articles/creating-3d-illustrations-with-css/",
-		"https://frontend.horse/issues/14/",
-		"https://frontend.horse/issues/11/",
 	]
 };
